@@ -1,3 +1,3 @@
-# Memo
+# Memo.Memo
 
-A simple Memo implemented by swing
+A simple Memo.Memo implemented by swing
