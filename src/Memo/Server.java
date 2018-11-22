@@ -1,10 +1,10 @@
+package Memo;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Server {
     private ArrayList<PrintWriter> clientOutputStreams;
@@ -28,7 +28,7 @@ public class Server {
             String message;
             try {
                 while ((message = reader.readLine()) != null) {
-                    System.out.println("Receive message: " + message);
+                    System.out.println("read" + message);
                     tellEveryone(message);
                 }
             } catch (Exception ex) {
@@ -45,6 +45,7 @@ public class Server {
         clientOutputStreams = new ArrayList<>();
         try{
             ServerSocket serverSock = new ServerSocket(5000);
+            //noinspection InfiniteLoopStatement
             while (true){
                 Socket clientSocket = serverSock.accept();
                 PrintWriter writer = new PrintWriter(clientSocket.getOutputStream());
@@ -59,10 +60,11 @@ public class Server {
         }
     }
     private void tellEveryone(String message){
-        for (PrintWriter clientOutputStream : clientOutputStreams) {
+        for (Object clientOutputStream : clientOutputStreams) {
             try {
-                clientOutputStream.println(message);
-                clientOutputStream.flush();
+                PrintWriter writer = (PrintWriter) clientOutputStream;
+                writer.println(message);
+                writer.flush();
             } catch (Exception ex) {
                 ex.printStackTrace();
             }

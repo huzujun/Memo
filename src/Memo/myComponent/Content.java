@@ -1,4 +1,4 @@
-package Memo;
+package Memo.myComponent;
 
 import javax.swing.*;
 import java.awt.*;

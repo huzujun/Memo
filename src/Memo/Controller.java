@@ -5,8 +5,6 @@ import Memo.view.MemoView;
 import Memo.view.View;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 
 public class Controller {
@@ -49,12 +47,14 @@ public class Controller {
         view = memoView;
         model.localMemoInit(memoView);
     }
-    public void delete(int id){
-        try {
-            Files.delete(Paths.get(String.format("text/%d", id)));
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
+    private void deleteLocal(int id){
+        model.deleteLocal(id);
+    }
+    private void deleteRemove(int id){
+        model.deleteRemove(id);
+    }
+    public void delete(int id, boolean local){
+        if (local) deleteLocal(id); else deleteRemove(id);
     }
     public String readFromFile(int id){
         return model.readFromFile(id);
