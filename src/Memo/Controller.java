@@ -9,57 +9,76 @@ import java.security.NoSuchAlgorithmException;
 
 public class Controller {
     private Model model;
-
     private View view;
 
     void setView(View view) {
         this.view = view;
     }
+
     public boolean authenticate(char[] input) throws NoSuchAlgorithmException {
         return model.authenticate(input);
     }
+
     public void setPassword(char[] password) throws IOException, NoSuchAlgorithmException {
         model.setPassword(password);
     }
-    public void openMemo(){
+
+    public void openMemo() {
         view = new MemoView(this);
     }
 
-    public void openLogin(){
+    public void openLogin() {
         view = new LoginView(this);
     }
-    public boolean save(String text){
+
+    public boolean save(String text) {
         return model.save(text);
     }
+
     void setModel(Model model) {
         this.model = model;
     }
-    public int getId(){
+
+    public int getId() {
         return model.nowEdit;
     }
-    public void setNowEdit(int id){
+
+    public void setNowEdit(int id) {
         model.nowEdit = id;
     }
-    public void create(){
-        model.create();
+
+    public void addLocalMemo() {
+        model.addLocalMemo();
     }
-    public void localMemoInit(MemoView memoView){
+
+    public void MemoInit(MemoView memoView) {
         view = memoView;
         model.localMemoInit(memoView);
+        model.removeMemoInit(memoView);
     }
-    private void deleteLocal(int id){
+
+    private void deleteLocal(int id) {
         model.deleteLocal(id);
     }
-    private void deleteRemove(int id){
+
+    private void deleteRemove(int id) {
         model.deleteRemove(id);
     }
-    public void delete(int id, boolean local){
-        if (local) deleteLocal(id); else deleteRemove(id);
+
+    public void delete(int id, boolean local) {
+        if (local) deleteLocal(id);
+        else deleteRemove(id);
     }
-    public String readFromFile(int id){
-        return model.readFromFile(id);
+
+    public String readFromFile(int id, boolean isLocal) {
+        return model.deleteFirstLine(model.readFromFile(id, isLocal));
     }
-    public void upload(int id){
+
+    public void upload(int id) {
         model.upload(id);
+    }
+
+    void netInit() {
+        model.netInit();
     }
 }

@@ -19,7 +19,7 @@ public class LoginView implements View {
     @Override
     public void setController(Controller controller) {
         this.controller = controller;
-        
+
     }
 
     private void initComponents() {

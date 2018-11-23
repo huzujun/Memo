@@ -13,12 +13,13 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 public class MemoView implements View {
-    private JFrame frame = new JFrame();
+    public JFrame frame = new JFrame();
     private Controller controller;
+    private JButton save = new JButton("保存");
 
     public MemoView(Controller controller) {
         this.controller = controller;
-        controller.localMemoInit(this);
+        controller.MemoInit(this);
         initComponents();
     }
 
@@ -28,6 +29,7 @@ public class MemoView implements View {
     }
 
     private JTextArea textArea = new JTextArea();
+
     private void initComponents() {
         frame.setSize(1200, 900);
         frame.setTitle("备忘录");
@@ -44,7 +46,6 @@ public class MemoView implements View {
 
         //right Part
         right.setLayout(new BorderLayout(0, 0));
-        JButton save = new JButton("保存");
         textArea.setFont(new Font("mono", Font.PLAIN, 20));
         textArea.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
         textArea.addKeyListener(new KeyAdapter() {
@@ -59,7 +60,7 @@ public class MemoView implements View {
                 }
                 if (code == KeyEvent.VK_N && modifiers == KeyEvent.CTRL_MASK) {
                     textArea.setText("");
-                    controller.create();
+                    controller.addLocalMemo();
                 }
             }
         });
@@ -115,7 +116,7 @@ public class MemoView implements View {
         create.setBackground(new Color(29, 158, 0));
         create.addActionListener(e -> {
             textArea.setText("");
-            controller.create();
+            controller.addLocalMemo();
         });
         up.add("South", create);
 
@@ -149,15 +150,17 @@ public class MemoView implements View {
     }
 
     private Content localMemo = new Content(), removeMemo = new Content();
-    public Display addLocalJscoll(String overview, String dateInfo, int id){
-        Display display = new Display(frame, controller, id, textArea, overview, localMemo, dateInfo, false);
+
+    public Display addLocalJscoll(String overview, String dateInfo, int id) {
+        Display display = new Display(frame, controller, id, textArea, save, overview, localMemo, dateInfo, true);
         localMemo.add("North", display);
         frame.revalidate();
         frame.repaint();
         return display;
     }
-    public Display addRemoveJscoll(String overview, String dateInfo, int id){
-        Display display = new Display(frame, controller, id, textArea, overview, localMemo, dateInfo, true);
+
+    public Display addRemoveJscoll(String overview, String dateInfo, int id) {
+        Display display = new Display(frame, controller, id, textArea, save, overview, removeMemo, dateInfo, false);
         removeMemo.add("North", display);
         frame.revalidate();
         frame.repaint();

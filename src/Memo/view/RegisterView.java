@@ -8,7 +8,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 
-public class RegisterView implements View{
+public class RegisterView implements View {
     private JFrame frame;
     private Controller controller;
 
