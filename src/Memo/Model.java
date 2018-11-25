@@ -91,7 +91,7 @@ class Model {
     String deleteFirstLine(String s) {
         String lines[] = s.split("\n");
         StringBuilder text = new StringBuilder();
-        for (int i = 1; i < lines.length; i++) text.append(lines[i]);
+        for (int i = 1; i < lines.length; i++) text.append(lines[i]).append("\n");
         return text.toString();
     }
 
@@ -100,9 +100,9 @@ class Model {
         try {
             File file;
             if (isLocal)
-                file = new File(String.format("text/local/%d", nowEdit));
+                file = new File(String.format("text/local/%d.md", nowEdit));
             else
-                file = new File(String.format("text/remove/%d", nowEdit));
+                file = new File(String.format("text/remove/%d.md", nowEdit));
             OutputStream fop = new FileOutputStream(file);
             OutputStreamWriter writer = new OutputStreamWriter(fop, StandardCharsets.UTF_8);
             writer.append(getDate()).append("\n");
@@ -120,8 +120,8 @@ class Model {
     String readFromFile(int id, boolean isLocal) {
         nowEdit = id;
         File file;
-        if (isLocal) file = new File(String.format("text/local/%d", id));
-        else file = new File(String.format("text/remove/%d", id));
+        if (isLocal) file = new File(String.format("text/local/%d.md", id));
+        else file = new File(String.format("text/remove/%d.md", id));
         Scanner sc = null;
         try {
             sc = new Scanner(file);
@@ -142,7 +142,7 @@ class Model {
         nowEdit = -1;
         this.memoView = memoview;
         for (int i = 1; i < 100; i++) {
-            File file = new File(String.format("text/local/%d", i));
+            File file = new File(String.format("text/local/%d.md", i));
             if (file.exists()) {
                 localDy[i] = ++localCnt;
                 StringBuilder s = new StringBuilder();
@@ -168,7 +168,7 @@ class Model {
         localCnt--;
         localDy[id] = -1;
         try {
-            Files.delete(Paths.get(String.format("text/local/%d", id)));
+            Files.delete(Paths.get(String.format("text/local/%d.md", id)));
         } catch (IOException e1) {
             e1.printStackTrace();
         }
@@ -182,7 +182,7 @@ class Model {
         nowEdit = -1;
         this.memoView = memoview;
         for (int i = 1; i < 100; i++) {
-            File file = new File(String.format("text/remove/%d", i));
+            File file = new File(String.format("text/remove/%d.md", i));
             if (file.exists()) {
                 removeDy[i] = ++removeCnt;
                 String[] text_lines = readFromFile(i, false).split("\n");
@@ -200,7 +200,7 @@ class Model {
 
     private void addRemoveMemo(String text) {
         for (int i = 1; i <= 100; i++) {
-            File file = new File(String.format("text/remove/%d", i));
+            File file = new File(String.format("text/remove/%d.md", i));
             if (!file.exists()) {
                 removeDy[i] = ++removeCnt;
                 nowEdit = i;
@@ -220,7 +220,7 @@ class Model {
         removeCnt--;
         removeDy[id] = -1;
         try {
-            Files.delete(Paths.get(String.format("text/remove/%d", id)));
+            Files.delete(Paths.get(String.format("text/remove/%d.md", id)));
         } catch (IOException e1) {
             e1.printStackTrace();
         }

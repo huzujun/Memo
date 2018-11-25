@@ -48,6 +48,8 @@ public class MemoView implements View {
         right.setLayout(new BorderLayout(0, 0));
         textArea.setFont(new Font("mono", Font.PLAIN, 20));
         textArea.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.RAISED));
+        textArea.setLineWrap(true);        //激活自动换行功能
+        textArea.setWrapStyleWord(true);
         textArea.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
                 int code = ke.getKeyCode();
@@ -70,7 +72,9 @@ public class MemoView implements View {
                 frame.repaint();
             }
         });
-        right.add("Center", textArea);
+        JScrollPane scroll = new JScrollPane (textArea,
+                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        right.add("Center", scroll);
 
         save.setFont(new Font("mono", Font.BOLD, 25));
         save.setBackground(Color.getHSBColor(255, 255, 70));
