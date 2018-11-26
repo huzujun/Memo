@@ -1,7 +1,7 @@
 # java 备忘录
 > 基于 java 实现的备忘录，支持 markdown 的写作和预览，严格遵守 MVC 模式
 
-[![Build Status][travis-image]][travis-url]
+[![build:passed](https://travis-ci.org/dbader/node-datadog-metrics.svg?branch=master)](https://travis-ci.org/dbader/node-datadog-metrics#)
 
 原型为北京交通大学软件学院高级程序设计实践作业备忘录，在其基础上增添 markdown 功能（不支持 markdown 的备忘录没有灵魂）
 
