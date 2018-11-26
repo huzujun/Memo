@@ -2,8 +2,10 @@ package Memo;
 
 import Memo.view.LoginView;
 import Memo.view.MemoView;
+import Memo.view.UploadView;
 import Memo.view.View;
 
+import java.awt.*;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 
@@ -38,15 +40,7 @@ public class Controller {
         return model.authenticate(input);
     }
 
-    /**
-     * 设定密码
-     * @param password 用户输入的密码
-     * @throws IOException IOException
-     * @throws NoSuchAlgorithmException NoSuchAlgorithmException
-     */
-    public void setPassword(char[] password) throws IOException, NoSuchAlgorithmException {
-        model.setPassword(password);
-    }
+    private UploadView uploadView;
 
     /**
      * 打开备忘录界面
@@ -93,9 +87,23 @@ public class Controller {
         model.removeMemoInit(memoView);
     }
 
+    private int id;
+
+    /**
+     * 设定密码
+     *
+     * @param password 用户输入的密码
+     * @throws IOException              IOException
+     * @throws NoSuchAlgorithmException NoSuchAlgorithmException
+     */
+    public void setPassword(char[] password) throws IOException, NoSuchAlgorithmException {
+        model.setPassword(password);
+    }
+
     /**
      * 删除本地备忘录
-     * @param id  备忘录序号
+     *
+     * @param id 备忘录序号
      */
     private void deleteLocal(int id) {
         model.deleteLocal(id);
@@ -103,7 +111,8 @@ public class Controller {
 
     /**
      * 删除远程备忘录
-     * @param id  备忘录序号
+     *
+     * @param id 备忘录序号
      */
     private void deleteRemove(int id) {
         model.deleteRemove(id);
@@ -111,7 +120,8 @@ public class Controller {
 
     /**
      * 删除备忘录
-     * @param id 备忘录序号
+     *
+     * @param id    备忘录序号
      * @param local 是否是本地的
      */
     public void delete(int id, boolean local) {
@@ -120,7 +130,7 @@ public class Controller {
     }
 
     /**
-     * @param id 文件序号
+     * @param id      文件序号
      * @param isLocal 是否是本地备忘录
      * @return 文本内容
      */
@@ -130,17 +140,18 @@ public class Controller {
 
     /**
      * 设定 html 地址
-     * @param id 备忘录序号
+     *
+     * @param id      备忘录序号
      * @param isLocal 是否是本地备忘录
      */
-    public void setUrl(int id, boolean isLocal){
+    public void setUrl(int id, boolean isLocal) {
         model.setUrl(id, isLocal);
     }
 
     /**
      * 切换成写模式
      */
-    public void changeToWrite(){
+    public void changeToWrite() {
         model.changeToWrite();
     }
 
@@ -149,8 +160,24 @@ public class Controller {
      * @param id 备忘录序号
      */
     public void upload(int id) {
+        this.id = id;
+        uploadView = new UploadView(this);
+    }
+
+    /**
+     * @param text 服务端地址
+     */
+    public void setNet(String text) {
+        if (model.setNet(text)) {
+            uploadView.jLabel.setText("上传成功");
+            uploadView.jLabel.setForeground(new Color(29, 158, 0));
+        } else {
+            uploadView.jLabel.setText("上传失败");
+            uploadView.jLabel.setForeground(Color.red);
+        }
         model.upload(id);
     }
+
 
     /**
      * 网络初始化

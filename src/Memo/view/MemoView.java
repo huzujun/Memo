@@ -39,7 +39,7 @@ public class MemoView implements View {
 
     private JTextArea textArea = new JTextArea();
     private Content right = new Content();
-
+    public String port = "";
     /**
      * 初始化组件
      */
@@ -124,7 +124,8 @@ public class MemoView implements View {
         down.add("Center", jscrollPane2);
 
         down.add("North", p2);
-        JLabel ipLable = new JLabel("局域网地址:   127.0.0.1:5000");
+        JLabel ipLable = new JLabel("局域网地址:   127.0.0.1:" + port);
+
         ipLable.setFont(new Font("mono", Font.ITALIC, 20));
         down.add("South", ipLable);
         ipLable.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
@@ -303,12 +304,6 @@ public class MemoView implements View {
         }
 
         right.add("Center", scroll);
-        save.addActionListener(e -> {
-            if (controller.save(textArea.getText())) {
-                frame.revalidate();
-                frame.repaint();
-            }
-        });
         save.setEnabled(false);
 
         double size_previewPanel[][] = {{0.5, 0.5}, {TableLayout.FILL}};

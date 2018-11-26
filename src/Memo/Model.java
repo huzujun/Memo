@@ -6,7 +6,9 @@ import conglin.test.TestMarkdownProcessor;
 
 import java.io.*;
 import java.math.BigInteger;
+import java.net.InetAddress;
 import java.net.Socket;
+import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -78,41 +80,16 @@ class Model {
         return y + "年" + m + "月" + d + "日 " + h + ":" + ((mi < 10) ? "0" + mi : mi);
     }
 
-    int nowEdit; //when edit the new one, nowEdit value is -1
+    int nowEdit; //when edit the new one, nowEdit value is 0
     //or nowEdit value is the id of the memo we're editing
 
     private int localCnt = 0, localDy[] = new int[100];
     private int removeCnt = 0, removeDy[] = new int[100];
     private LinkedList<Display> localList = new LinkedList<>(), removeList = new LinkedList<>();
-
     /**
-     * 保存或创建文件
-     * @param text 文本内容
-     * @return 是否是本地文件
+     * 初始化网路
      */
-    //localMemo save
-    boolean save(String text) { //return true when the nowEdit value is -1
-        if (nowEdit == -1) {
-            for (int i = 1; i <= 100; i++) {
-                File file = new File(String.format("text/local/%d.md", i));
-                if (!file.exists()) {
-                    localDy[i] = ++localCnt;
-                    nowEdit = i;
-                    write(text, true);
-                    localList.addLast(memoView.addLocalJscoll(null, null, i));
-                    break;
-                }
-            }
-            return true;
-        } else {
-            write(text, true);
-            Display that = localList.get(localDy[nowEdit] - 1);
-            that.setLabel1(getDate());
-            that.setLabel2(text);
-            that.refresh();
-            return false;
-        }
-    }
+    private String netUrl = "127.0.0.1";
 
     /**
      * @param s 文本内容
@@ -125,37 +102,41 @@ class Model {
         return text.toString();
     }
 
+    private Socket connection;
+
     /**
-     * 文本转化成本地文件
+     * 保存或创建文件
      * @param text 文本内容
-     * @param isLocal 是否是本地文本
+     * @return 是否是本地文件
      */
-    //write text to file
-    private void write(String text, boolean isLocal) {
-        try {
-            File file;
-            if (isLocal)
-                file = new File(String.format("text/local/%d.md", nowEdit));
-            else
-                file = new File(String.format("text/remove/%d.md", nowEdit));
-            OutputStream fop = new FileOutputStream(file);
-            OutputStreamWriter writer = new OutputStreamWriter(fop, StandardCharsets.UTF_8);
-            writer.append(getDate()).append("\n");
-            if (isLocal)
-                writer.append(text);
-            else
-                writer.append(deleteFirstLine(text));
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            if (isLocal)
-                TestMarkdownProcessor.process(String.format("text/local/%d.md", nowEdit));
-            else
-                TestMarkdownProcessor.process(String.format("text/remove/%d.md", nowEdit));
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
+    //localMemo save
+    boolean save(String text) { //return true when the nowEdit value is 0
+        if (nowEdit == 0) {
+            for (int i = 1; i <= 100; i++) {
+                File file = new File(String.format("text/local/%d.md", i));
+                if (!file.exists()) {
+                    localDy[i] = ++localCnt;
+                    nowEdit = i;
+                    write(text, true);
+                    localList.addLast(memoView.addLocalJscoll(null, null, i));
+                    break;
+                }
+            }
+            return true;
+        } else if (nowEdit > 0) {
+            write(text, true);
+            Display that = localList.get(localDy[nowEdit] - 1);
+            that.setLabel1(getDate());
+            that.setLabel2(text);
+            that.refresh();
+            return false;
+        } else {
+            write(text, false);
+            Display that = removeList.get(removeDy[-nowEdit] - 1);
+            that.setLabel1(getDate());
+            that.setLabel2(text);
+            that.refresh();
+            return true;
         }
     }
 
@@ -187,12 +168,51 @@ class Model {
     }
 
     /**
-     * @param id 备忘录序号
+     * @param id      备忘录序号
      * @param isLocal 是否是本地备忘录
      */
-    void setUrl(int id, boolean isLocal){
+    void setUrl(int id, boolean isLocal) {
         if (isLocal) memoView.url = String.format("text/local/%d.md.html", id);
         else memoView.url = String.format("text/remove/%d.md.html", id);
+    }
+
+    private String deleteSecondLine(String s) {
+        String lines[] = s.split("\n");
+        StringBuilder text = new StringBuilder();
+        text.append(lines[0]).append("\n");
+        for (int i = 2; i < lines.length; i++) text.append(lines[i]).append("\n");
+        return text.toString();
+    }
+
+    /**
+     * 文本转化成本地文件
+     * @param text 文本内容
+     * @param isLocal 是否是本地文本
+     */
+    //write text to file
+    private void write(String text, boolean isLocal) {
+        try {
+            File file;
+            if (isLocal)
+                file = new File(String.format("text/local/%d.md", nowEdit));
+            else
+                file = new File(String.format("text/remove/%d.md", -nowEdit));
+            OutputStream fop = new FileOutputStream(file);
+            OutputStreamWriter writer = new OutputStreamWriter(fop, StandardCharsets.UTF_8);
+            writer.append(getDate()).append("\n");
+            writer.append(text);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (isLocal)
+                TestMarkdownProcessor.process(String.format("text/local/%d.md", nowEdit));
+            else
+                TestMarkdownProcessor.process(String.format("text/remove/%d.md", -nowEdit));
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -200,8 +220,9 @@ class Model {
      * @param memoview 备忘录界面
      */
     void localMemoInit(MemoView memoview) {
-        nowEdit = -1;
+        nowEdit = 0;
         this.memoView = memoview;
+        memoView.port = String.valueOf(connection.getLocalPort());
         for (int i = 1; i < 100; i++) {
             File file = new File(String.format("text/local/%d.md", i));
             if (file.exists()) {
@@ -219,7 +240,7 @@ class Model {
                 }
                 String[] text_lines = s.toString().split("\n");
                 localList.addLast(memoView.addLocalJscoll(text_lines[1], text_lines[0], i));
-            } else localDy[i] = -1;
+            } else localDy[i] = 0;
         }
     }
 
@@ -229,11 +250,12 @@ class Model {
      */
     void deleteLocal(int id) {
         localList.remove(localDy[id] - 1);
-        for (int i = 1; i < 100; i++) if (localDy[i] != -1 && localDy[i] > localDy[id]) localDy[i]--;
+        for (int i = 1; i < 100; i++) if (localDy[i] != 0 && localDy[i] > localDy[id]) localDy[i]--;
         localCnt--;
-        localDy[id] = -1;
+        localDy[id] = 0;
         try {
             Files.delete(Paths.get(String.format("text/local/%d.md", id)));
+            Files.delete(Paths.get(String.format("text/local/%d.md.html", id)));
         } catch (IOException e1) {
             e1.printStackTrace();
         }
@@ -243,7 +265,7 @@ class Model {
      * 创建本地备忘录
      */
     void addLocalMemo() {
-        nowEdit = -1;
+        nowEdit = 0;
     }
 
     /**
@@ -251,7 +273,7 @@ class Model {
      * @param memoview 备忘录界面
      */
     void removeMemoInit(MemoView memoview) {
-        nowEdit = -1;
+        nowEdit = 0;
         this.memoView = memoview;
         for (int i = 1; i < 100; i++) {
             File file = new File(String.format("text/remove/%d.md", i));
@@ -259,7 +281,7 @@ class Model {
                 removeDy[i] = ++removeCnt;
                 String[] text_lines = readFromFile(i, false).split("\n");
                 removeList.addLast(memoView.addRemoveJscoll(text_lines[1], text_lines[0], i));
-            } else removeDy[i] = -1;
+            } else removeDy[i] = 0;
         }
     }
 
@@ -268,11 +290,21 @@ class Model {
      * @param id 本地备忘录编号
      */
     void upload(int id) {
-        String text = readFromFile(id, true);
+        String text = deleteFirstLine(readFromFile(id, true));
         serverOut.println(text);
         serverOut.println(String.valueOf((char) 0));
         //addRemoveMemo(text);
     }
+
+    /**
+     * 切换为写模式
+     */
+    void changeToWrite() {
+        memoView.changeToWrite();
+    }
+
+    private PrintStream serverOut;
+    private BufferedReader serverIn;
 
     /**
      * 新建远程备忘录
@@ -283,8 +315,8 @@ class Model {
             File file = new File(String.format("text/remove/%d.md", i));
             if (!file.exists()) {
                 removeDy[i] = ++removeCnt;
-                nowEdit = i;
-                write(text, false);
+                nowEdit = -i;
+                write(deleteSecondLine(text), false);
                 String lines[] = text.split("\n");
                 removeList.addLast(memoView.addRemoveJscoll(lines[1], null, i));
                 break;
@@ -300,32 +332,20 @@ class Model {
      */
     void deleteRemove(int id) {
         removeList.remove(removeDy[id] - 1);
-        for (int i = 1; i < 100; i++) if (removeDy[i] != -1 && removeDy[i] > removeDy[id]) removeDy[i]--;
+        for (int i = 1; i < 100; i++) if (removeDy[i] != 0 && removeDy[i] > removeDy[id]) removeDy[i]--;
         removeCnt--;
-        removeDy[id] = -1;
+        removeDy[id] = 0;
         try {
             Files.delete(Paths.get(String.format("text/remove/%d.md", id)));
+            Files.delete(Paths.get(String.format("text/remove/%d.md.html", id)));
         } catch (IOException e1) {
             e1.printStackTrace();
         }
     }
 
-    /**
-     * 切换为写模式
-     */
-    void changeToWrite(){
-        memoView.changeToWrite();
-    }
-
-    private PrintStream serverOut;
-    private BufferedReader serverIn;
-
-    /**
-     * 初始化网路
-     */
     void netInit() {
         try {
-            Socket connection = new Socket("127.0.0.1", 5000);
+            connection = new Socket(netUrl, 5000);
             serverIn = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             serverOut = new PrintStream(connection.getOutputStream());
         } catch (IOException e) {
@@ -335,6 +355,31 @@ class Model {
         readThread.start();
     }
 
+    boolean setNet(String netUrl) {
+        this.netUrl = netUrl;
+        InetAddress ad = null;
+        try {
+            ad = InetAddress.getByName(netUrl);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        try {
+            assert ad != null;
+            boolean state = ad.isReachable(1000);
+            if (!state) return false;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            connection = new Socket(netUrl, 5000);
+            memoView.port = String.valueOf(connection.getLocalPort());
+            serverIn = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            serverOut = new PrintStream(connection.getOutputStream());
+            return true;
+        } catch (IOException e) {
+            return false;
+        }
+    }
     /**
      * 读入服务器备忘录进程
      */
@@ -345,7 +390,7 @@ class Model {
             String aLine;
             StringBuilder s = new StringBuilder();
             try {
-                while ((aLine = serverIn.readLine())!=null){
+                while ((aLine = serverIn.readLine()) != null) {
                     if (aLine.equals(String.valueOf((char) 0))) {
                         System.out.println("recieve message: ");
                         System.out.println(s.toString());

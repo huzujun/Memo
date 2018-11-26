@@ -45,10 +45,6 @@ public class Display extends Content {
         jButton.setBackground(Color.white);
         jButton.setBorder(null);
         jButton.addActionListener(e -> {
-            if (isLocal) {
-                controller.setNowEdit(id);
-                save.setEnabled(true);
-            } else save.setEnabled(false);
             textArea.setText(controller.readFromFile(id, isLocal));
             textArea.setCaretPosition(0);
             controller.setUrl(id, isLocal);
