@@ -19,9 +19,11 @@ public class LoginView implements View {
     @Override
     public void setController(Controller controller) {
         this.controller = controller;
-
     }
 
+    /**
+     * 初始化组件
+     */
     private void initComponents() {
         frame = new JFrame();
         JPanel panel = new JPanel();

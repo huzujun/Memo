@@ -7,6 +7,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
+/**
+ * 服务器
+ */
 class Server {
     private ArrayList<PrintWriter> clientOutputStreams;
 
@@ -14,6 +17,9 @@ class Server {
         BufferedReader reader;
         Socket sock;
 
+        /**
+         * @param clientSocket 客户端Socket
+         */
         ClientHandler(Socket clientSocket) {
             try {
                 sock = clientSocket;
@@ -24,6 +30,9 @@ class Server {
             }
         }
 
+        /**
+         * 读取客户端发送的信息的进程
+         */
         @Override
         public void run() {
             String message;
@@ -38,10 +47,14 @@ class Server {
         }
     }
 
+
     public static void main(String[] args) {
         new Server().go();
     }
 
+    /**
+     * 服务器进程
+     */
     private void go() {
         clientOutputStreams = new ArrayList<>();
         try {
@@ -61,6 +74,10 @@ class Server {
         }
     }
 
+    /**
+     * 广播
+     * @param message 要广播的内容
+     */
     private void tellEveryone(String message) {
         for (Object clientOutputStream : clientOutputStreams) {
             try {

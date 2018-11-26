@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d6a332c-dbd8-43e6-a8a0-70d4ef9b1f63" name="Default Changelist" comment="Finshed all basic features and removed some knowed bug">
+    <list default="true" id="2d6a332c-dbd8-43e6-a8a0-70d4ef9b1f63" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Memo/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memo/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memo/myComponent/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/myComponent/Content.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memo/myComponent/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/myComponent/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memo/myComponent/myButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/myComponent/myButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memo/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/view/LoginView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Memo/view/MemoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/view/MemoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/usr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Memo/view/RegisterView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/view/RegisterView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,45 +25,46 @@
     <session id="-1229195190">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.104" value="1" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="1" />
           <entry key="dummy" value="18" />
-          <entry key="java" value="23161" />
-          <entry key="txt" value="106" />
+          <entry key="java" value="27438" />
+          <entry key="txt" value="188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="23161" />
-          <entry key="PLAIN_TEXT" value="124" />
+          <entry key="JAVA" value="27438" />
+          <entry key="PLAIN_TEXT" value="206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="5" value="1" />
-          <entry key="class" value="36" />
-          <entry key="java" value="72" />
+          <entry key="class" value="44" />
+          <entry key="java" value="83" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="36" />
-          <entry key="JAVA" value="72" />
+          <entry key="CLASS" value="44" />
+          <entry key="JAVA" value="83" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -64,27 +72,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Memo/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="263">
+              <caret line="314" column="7" lean-forward="true" selection-start-line="314" selection-start-column="7" selection-end-line="314" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#5971#5972#0" expanded="true" />
-                <element signature="e#5999#6000#0" expanded="true" />
+                <element signature="e#9349#9350#0" expanded="true" />
+                <element signature="e#9372#9373#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Memo/view/LoginView.java">
+        <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1316">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="-1719">
+              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,27 +98,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Memo/view/MemoView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="86">
+              <caret line="272" column="43" lean-forward="true" selection-start-line="272" selection-start-column="43" selection-end-line="272" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#1583#2230#0" expanded="true" />
-                <element signature="e#2229#2230#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/conglin/test/TestMarkdownProcessor.java">
+        <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/myButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="140">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -120,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Memo/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="37">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,28 +134,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Memo/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+            <state relative-caret-position="445">
+              <caret line="143" column="27" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1262#1263#0" expanded="true" />
-                <element signature="e#1299#1300#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1378#1379#0" expanded="true" />
-                <element signature="e#1670#1671#0" expanded="true" />
-                <element signature="e#1702#1703#0" expanded="true" />
+                <element signature="e#2718#2719#0" expanded="true" />
+                <element signature="e#2752#2753#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,20 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/Content.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="37" column="50" lean-forward="true" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+            <state relative-caret-position="448">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Memo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+            <state relative-caret-position="429">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,36 +181,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setpr</find>
-      <find>boxla</find>
-      <find>nowEdit = -1</find>
-      <find>nowEdit</find>
-      <find>revalidate</find>
-      <find>add</find>
-      <find>setDateInfo</find>
-      <find>textA</find>
-      <find>sc</find>
-      <find>writer.append</find>
-      <find>nextline</find>
-      <find>addLocalJscoll</find>
-      <find>setText</find>
-      <find>de</find>
-      <find>addLast</find>
-      <find>d</find>
       <find>addlocal</find>
       <find>create</find>
       <find>id</find>
       <find>readFromFile</find>
       <find>local</find>
-      <find>upload</find>
       <find>dy</find>
-      <find>save</find>
       <find>text/</find>
       <find>te</find>
       <find>button</find>
-      <find>delete</find>
       <find>textarea</find>
       <find>/%d</find>
+      <find>Color</find>
+      <find>Right</find>
+      <find>set</find>
+      <find>this</find>
+      <find>delete</find>
+      <find>right</find>
+      <find>change</find>
+      <find>read</find>
+      <find>de</find>
+      <find>init</find>
+      <find>textpane</find>
+      <find>edit</find>
+      <find>save</find>
+      <find>memo</find>
+      <find>upload</find>
+      <find>File</find>
+      <find>try</find>
+      <find>remove</find>
+      <find>Editorpane</find>
     </findStrings>
     <replaceStrings>
       <replace>localCnt</replace>
@@ -284,16 +258,20 @@
         <option value="$PROJECT_DIR$/src/Memo/view/View.java" />
         <option value="$PROJECT_DIR$/src/Memo/view/content.java" />
         <option value="$PROJECT_DIR$/src/Memo/Memo.java" />
-        <option value="$PROJECT_DIR$/src/Memo/view/RegisterView.java" />
-        <option value="$PROJECT_DIR$/src/Memo/view/LoginView.java" />
         <option value="$PROJECT_DIR$/src/Memo/view/myButton.java" />
         <option value="$PROJECT_DIR$/src/Memo/view/Display.java" />
+        <option value="$PROJECT_DIR$/src/Memo/myComponent/writeMode.java" />
+        <option value="$PROJECT_DIR$/src/conglin/test/TestMarkdownProcessor.java" />
+        <option value="$PROJECT_DIR$/src/Memo/view/LoginView.java" />
+        <option value="$PROJECT_DIR$/src/Memo/view/RegisterView.java" />
         <option value="$PROJECT_DIR$/src/Memo/Server.java" />
-        <option value="$PROJECT_DIR$/src/Memo/Controller.java" />
-        <option value="$PROJECT_DIR$/src/Memo/myComponent/Display.java" />
+        <option value="$PROJECT_DIR$/src/Memo/myComponent/Content.java" />
+        <option value="$PROJECT_DIR$/src/Memo/myComponent/myButton.java" />
         <option value="$PROJECT_DIR$/src/Memo/Main.java" />
-        <option value="$PROJECT_DIR$/src/Memo/view/MemoView.java" />
+        <option value="$PROJECT_DIR$/src/Memo/myComponent/Display.java" />
+        <option value="$PROJECT_DIR$/src/Memo/Controller.java" />
         <option value="$PROJECT_DIR$/src/Memo/Model.java" />
+        <option value="$PROJECT_DIR$/src/Memo/view/MemoView.java" />
       </list>
     </option>
   </component>
@@ -311,7 +289,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -329,6 +306,27 @@
               <item name="Memo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="conglin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Memo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Memo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="conglin" type="462c0819:PsiDirectoryNode" />
+              <item name="link" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Memo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Memo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="conglin" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Memo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Memo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="conglin" type="462c0819:PsiDirectoryNode" />
+              <item name="replacement" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Memo" type="b2602c69:ProjectViewProjectNode" />
@@ -366,13 +364,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="File&#9;PSI&#9;JAVA://Memo.Model#readFromFile" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543137310197" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543199304157" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -380,7 +379,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -490,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542962700587</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed some bug">
+      <created>1543137341828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543137341828</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -505,7 +511,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18729989" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19370331" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -514,7 +520,35 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32879582" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.2764398" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.2764398" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39790577" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053364" side_tool="true" weight="0.2764398" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32984293" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3277487" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497332" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18729989" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32879582" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.2764398" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39790577" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,7 +565,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -550,61 +584,11 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="rebuild by MVC pattern" />
     <MESSAGE value="Finshed all basic features and removed some knowed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finshed all basic features and removed some knowed bug" />
+    <MESSAGE value="fixed some bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Memo/Model.java</url>
-          <line>194</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="376" column="19" selection-start-line="376" selection-start-column="19" selection-end-line="376" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/AbstractButton.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="180" column="16" selection-start-line="180" selection-start-column="16" selection-end-line="180" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JTextArea.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/awt/Container.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/View.java" />
-    <entry file="file://$PROJECT_DIR$/src/Memo/View/login.java" />
-    <entry file="file://$PROJECT_DIR$/src/Memo/View/ViewInterface.java" />
-    <entry file="file://$PROJECT_DIR$/src/Memo/View/LoginView.java" />
     <entry file="file://$PROJECT_DIR$/src/Memo/View2.java" />
     <entry file="file://$PROJECT_DIR$/src/Memo/New Folder/Memo.java" />
     <entry file="file://$PROJECT_DIR$/src/Memo/New Folder/Controller.java" />
@@ -662,13 +646,6 @@
     <entry file="file://$PROJECT_DIR$/New Folder/Memo.java" />
     <entry file="file://$PROJECT_DIR$/New Folder/Model.java" />
     <entry file="file://$PROJECT_DIR$/New Folder/View2.java" />
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/text/JTextComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="763" column="18" selection-start-line="763" selection-start-column="18" selection-end-line="763" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -691,16 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memo/view/RegisterView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Memo/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -712,13 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="280" selection-start-line="280" selection-end-line="280" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/myButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -751,20 +711,116 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/text/remove/5" />
-    <entry file="file://$PROJECT_DIR$/src/Memo/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/writeMode.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/JEditorPane.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="221">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/io/File.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1316">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/javax/swing/text/JTextComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="763" column="18" selection-start-line="763" selection-start-column="18" selection-end-line="763" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conglin/test/TestMarkdownProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memo/view/RegisterView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conglin/link/LinkDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conglin/markdown/MarkdownProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6244">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conglin/replacement/Replacement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conglin/markdown/MarkdownContentEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1316">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memo/view/LoginView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Memo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        <state relative-caret-position="429">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/StringBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="103" column="17" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/AbstractStringBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="309" column="33" selection-start-line="309" selection-start-column="33" selection-end-line="309" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memo/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -773,93 +829,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/Content.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="448">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/Display.java">
+    <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/myButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="37" column="50" lean-forward="true" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="140">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Memo/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+        <state relative-caret-position="445">
+          <caret line="143" column="27" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/conglin/test/TestMarkdownProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memo/view/MemoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#1583#2230#0" expanded="true" />
-            <element signature="e#2229#2230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memo/view/LoginView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1316">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2718#2719#0" expanded="true" />
+            <element signature="e#2752#2753#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Memo/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="263">
+          <caret line="314" column="7" lean-forward="true" selection-start-line="314" selection-start-column="7" selection-end-line="314" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#5971#5972#0" expanded="true" />
-            <element signature="e#5999#6000#0" expanded="true" />
+            <element signature="e#9349#9350#0" expanded="true" />
+            <element signature="e#9372#9373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memo/myComponent/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1719">
+          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memo/view/MemoView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="272" column="43" lean-forward="true" selection-start-line="272" selection-start-column="43" selection-end-line="272" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

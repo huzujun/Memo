@@ -3,6 +3,9 @@ package Memo.myComponent;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * 白色的 Jpanel
+ */
 public class Content extends JPanel {
     public Content() {
         this.setOpaque(true);

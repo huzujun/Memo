@@ -2,6 +2,7 @@ package Memo;
 
 import Memo.myComponent.Display;
 import Memo.view.MemoView;
+import conglin.test.TestMarkdownProcessor;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -15,15 +16,24 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+/**
+ *
+ */
 class Model {
     private String password;
     private MemoView memoView;
 
+    /**
+     * @param password 密码
+     */
     //about password
     void setPassword(String password) {
         this.password = password;
     }
 
+    /**
+     * @param password 密码
+     */
     void setPassword(char[] password) throws IOException, NoSuchAlgorithmException {
         this.password = getHashPass(new String(password));
 
@@ -35,10 +45,18 @@ class Model {
         fop.close();
     }
 
+    /**
+     * @param input 用户输入的密码
+     * @return 是否匹配
+     */
     boolean authenticate(char[] input) throws NoSuchAlgorithmException {
         return getHashPass(new String(input)).equals(password);
     }
 
+    /**
+     * @param plainText 源文本
+     * @return md5加密后的文本
+     */
     private String getHashPass(String plainText) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
         md.update(plainText.getBytes());
@@ -46,6 +64,9 @@ class Model {
         return new BigInteger(1, md.digest()).toString(16);
     }
 
+    /**
+     * @return 说明当前时间的字符串
+     */
     private String getDate() {
         int y, m, d, h, mi;
         Calendar cal = Calendar.getInstance();
@@ -64,11 +85,16 @@ class Model {
     private int removeCnt = 0, removeDy[] = new int[100];
     private LinkedList<Display> localList = new LinkedList<>(), removeList = new LinkedList<>();
 
+    /**
+     * 保存或创建文件
+     * @param text 文本内容
+     * @return 是否是本地文件
+     */
     //localMemo save
     boolean save(String text) { //return true when the nowEdit value is -1
         if (nowEdit == -1) {
             for (int i = 1; i <= 100; i++) {
-                File file = new File(String.format("text/local/%d", i));
+                File file = new File(String.format("text/local/%d.md", i));
                 if (!file.exists()) {
                     localDy[i] = ++localCnt;
                     nowEdit = i;
@@ -88,6 +114,10 @@ class Model {
         }
     }
 
+    /**
+     * @param s 文本内容
+     * @return 文本内容删除第一行后的字符串
+     */
     String deleteFirstLine(String s) {
         String lines[] = s.split("\n");
         StringBuilder text = new StringBuilder();
@@ -95,6 +125,11 @@ class Model {
         return text.toString();
     }
 
+    /**
+     * 文本转化成本地文件
+     * @param text 文本内容
+     * @param isLocal 是否是本地文本
+     */
     //write text to file
     private void write(String text, boolean isLocal) {
         try {
@@ -114,8 +149,21 @@ class Model {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+            if (isLocal)
+                TestMarkdownProcessor.process(String.format("text/local/%d.md", nowEdit));
+            else
+                TestMarkdownProcessor.process(String.format("text/remove/%d.md", nowEdit));
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
     }
 
+    /**
+     * @param id 备忘录序号
+     * @param isLocal 是否是本地备忘录
+     * @return 文件里的文本内容
+     */
     //read file and return String
     String readFromFile(int id, boolean isLocal) {
         nowEdit = id;
@@ -138,6 +186,19 @@ class Model {
         return s.toString();
     }
 
+    /**
+     * @param id 备忘录序号
+     * @param isLocal 是否是本地备忘录
+     */
+    void setUrl(int id, boolean isLocal){
+        if (isLocal) memoView.url = String.format("text/local/%d.md.html", id);
+        else memoView.url = String.format("text/remove/%d.md.html", id);
+    }
+
+    /**
+     * 加载本地备忘录
+     * @param memoview 备忘录界面
+     */
     void localMemoInit(MemoView memoview) {
         nowEdit = -1;
         this.memoView = memoview;
@@ -162,6 +223,10 @@ class Model {
         }
     }
 
+    /**
+     * 删除本地备忘录
+     * @param id 备忘录编号
+     */
     void deleteLocal(int id) {
         localList.remove(localDy[id] - 1);
         for (int i = 1; i < 100; i++) if (localDy[i] != -1 && localDy[i] > localDy[id]) localDy[i]--;
@@ -174,10 +239,17 @@ class Model {
         }
     }
 
+    /**
+     * 创建本地备忘录
+     */
     void addLocalMemo() {
         nowEdit = -1;
     }
 
+    /**
+     * 加载本地的网路备忘录
+     * @param memoview 备忘录界面
+     */
     void removeMemoInit(MemoView memoview) {
         nowEdit = -1;
         this.memoView = memoview;
@@ -191,6 +263,10 @@ class Model {
         }
     }
 
+    /**
+     * 将本地备忘录上传到服务器
+     * @param id 本地备忘录编号
+     */
     void upload(int id) {
         String text = readFromFile(id, true);
         serverOut.println(text);
@@ -198,6 +274,10 @@ class Model {
         //addRemoveMemo(text);
     }
 
+    /**
+     * 新建远程备忘录
+     * @param text 文本
+     */
     private void addRemoveMemo(String text) {
         for (int i = 1; i <= 100; i++) {
             File file = new File(String.format("text/remove/%d.md", i));
@@ -214,6 +294,10 @@ class Model {
         memoView.frame.repaint();
     }
 
+    /**
+     * 删除远程备忘录
+     * @param id 备忘录序号
+     */
     void deleteRemove(int id) {
         removeList.remove(removeDy[id] - 1);
         for (int i = 1; i < 100; i++) if (removeDy[i] != -1 && removeDy[i] > removeDy[id]) removeDy[i]--;
@@ -226,9 +310,19 @@ class Model {
         }
     }
 
+    /**
+     * 切换为写模式
+     */
+    void changeToWrite(){
+        memoView.changeToWrite();
+    }
+
     private PrintStream serverOut;
     private BufferedReader serverIn;
 
+    /**
+     * 初始化网路
+     */
     void netInit() {
         try {
             Socket connection = new Socket("127.0.0.1", 5000);
@@ -241,6 +335,9 @@ class Model {
         readThread.start();
     }
 
+    /**
+     * 读入服务器备忘录进程
+     */
     // an inner class to listen to server
     private class RemoteReader implements Runnable {
         @Override
@@ -253,6 +350,7 @@ class Model {
                         System.out.println("recieve message: ");
                         System.out.println(s.toString());
                         addRemoveMemo(s.toString());
+                        s = new StringBuilder();
                     }else s.append(aLine).append("\n");
                 }
             } catch (IOException e) {
