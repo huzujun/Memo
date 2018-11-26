@@ -1,0 +1,28 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.2
+-------------------------------------------------------------------------------
+count time : 2018-11-23 16:53:45
+count workspace : /home/huzujun/Desktop/java/homework/submit/Memo/src
+total files : 11
+total code lines : 756
+total comment lines : 18
+total blank lines : 123
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .java|            756|             18|            123| 1.0e+2|
+   -------------------------------------------------------------------------
+Memo/Controller.java, code is 64, comment is 0, blank is 20.
+Memo/Main.java, code is 48, comment is 0, blank is 6.
+Memo/Model.java, code is 230, comment is 9, blank is 26.
+Memo/myComponent/Content.java, code is 14, comment is 1, blank is 4.
+Memo/myComponent/Display.java, code is 78, comment is 0, blank is 9.
+Memo/myComponent/myButton.java, code is 11, comment is 0, blank is 2.
+Memo/Server.java, code is 65, comment is 1, blank is 9.
+Memo/view/LoginView.java, code is 55, comment is 0, blank is 12.
+Memo/view/MemoView.java, code is 139, comment is 7, blank is 24.
+Memo/view/RegisterView.java, code is 47, comment is 0, blank is 9.
+Memo/view/View.java, code is 5, comment is 0, blank is 2.
+===============================================================================

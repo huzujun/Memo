@@ -1,0 +1,90 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.2",
+    "workspace": "/home/huzujun/Desktop/java/homework/submit/Memo/src",
+    "linecount": [
+        {
+            "version": "0.2.2",
+            "counttime": "2018-11-23 16:53:45",
+            "filesum": 11,
+            "codesum": 756,
+            "commentsum": 18,
+            "blanksum": 123,
+            "statistics": {
+                ".java": {
+                    "code": 756,
+                    "comment": 18,
+                    "blank": 123
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 20,
+                    "code": 64,
+                    "comment": 0,
+                    "filename": "Memo/Controller.java"
+                },
+                {
+                    "blank": 6,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "Memo/Main.java"
+                },
+                {
+                    "blank": 26,
+                    "code": 230,
+                    "comment": 9,
+                    "filename": "Memo/Model.java"
+                },
+                {
+                    "blank": 4,
+                    "code": 14,
+                    "comment": 1,
+                    "filename": "Memo/myComponent/Content.java"
+                },
+                {
+                    "blank": 9,
+                    "code": 78,
+                    "comment": 0,
+                    "filename": "Memo/myComponent/Display.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "Memo/myComponent/myButton.java"
+                },
+                {
+                    "blank": 9,
+                    "code": 65,
+                    "comment": 1,
+                    "filename": "Memo/Server.java"
+                },
+                {
+                    "blank": 12,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "Memo/view/LoginView.java"
+                },
+                {
+                    "blank": 24,
+                    "code": 139,
+                    "comment": 7,
+                    "filename": "Memo/view/MemoView.java"
+                },
+                {
+                    "blank": 9,
+                    "code": 47,
+                    "comment": 0,
+                    "filename": "Memo/view/RegisterView.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "Memo/view/View.java"
+                }
+            ]
+        }
+    ]
+}
