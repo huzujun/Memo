@@ -357,18 +357,18 @@ class Model {
 
     boolean setNet(String netUrl) {
         this.netUrl = netUrl;
-        InetAddress ad = null;
+        InetAddress ad;
         try {
             ad = InetAddress.getByName(netUrl);
         } catch (UnknownHostException e) {
-            e.printStackTrace();
+            return false;
         }
         try {
             assert ad != null;
             boolean state = ad.isReachable(1000);
             if (!state) return false;
         } catch (IOException e) {
-            e.printStackTrace();
+            return false;
         }
         try {
             connection = new Socket(netUrl, 5000);

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d6a332c-dbd8-43e6-a8a0-70d4ef9b1f63" name="Default Changelist" comment="change the upload">
-      <change afterPath="$PROJECT_DIR$/src/Memo/view/UploadView.java" afterDir="false" />
+    <list default="true" id="2d6a332c-dbd8-43e6-a8a0-70d4ef9b1f63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Memo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Memo/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memo/myComponent/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/myComponent/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memo/view/MemoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Memo/view/MemoView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,15 +46,15 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="dummy" value="20" />
-          <entry key="java" value="29355" />
-          <entry key="txt" value="249" />
+          <entry key="java" value="29409" />
+          <entry key="txt" value="313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="29355" />
-          <entry key="PLAIN_TEXT" value="269" />
+          <entry key="JAVA" value="29409" />
+          <entry key="PLAIN_TEXT" value="333" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,13 +76,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Memo/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="293" column="16" selection-start-line="293" selection-start-column="16" selection-end-line="293" selection-end-column="16" />
+            <state relative-caret-position="125">
+              <caret line="357" column="15" lean-forward="true" selection-start-line="357" selection-start-column="15" selection-end-line="357" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9099#9100#0" expanded="true" />
+                <element signature="e#9139#9140#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/Memo/view/UploadView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="259">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Memo/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+            <state relative-caret-position="377">
+              <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2763#2764#0" expanded="true" />
@@ -183,7 +181,7 @@
         <entry file="file://$PROJECT_DIR$/src/Memo/view/MemoView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,8 +241,8 @@
       <find>socket</find>
       <find>memoView</find>
       <find>127.</find>
-      <find>net</find>
       <find>localMemoInit</find>
+      <find>net</find>
     </findStrings>
     <replaceStrings>
       <replace>localCnt</replace>
@@ -306,10 +304,10 @@
         <option value="$PROJECT_DIR$/src/conglin/markdown/MarkdownProcessor.java" />
         <option value="$PROJECT_DIR$/src/Memo/view/uploadView.java" />
         <option value="$PROJECT_DIR$/src/Memo/view/UploadView.java" />
-        <option value="$PROJECT_DIR$/src/Memo/Controller.java" />
         <option value="$PROJECT_DIR$/src/Memo/view/MemoView.java" />
         <option value="$PROJECT_DIR$/src/Memo/Main.java" />
         <option value="$PROJECT_DIR$/src/Memo/Model.java" />
+        <option value="$PROJECT_DIR$/src/Memo/Controller.java" />
       </list>
     </option>
   </component>
@@ -409,7 +407,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="File&#9;PSI&#9;JAVA://Memo.Model#readFromFile" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543230979964" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543234960791" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tablelayout.jar!/" />
@@ -549,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543199385147</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change the upload part and fixed some bug, maybe it's the final version">
+      <created>1543231020233</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543231020234</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -563,8 +568,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19583778" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19583778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -573,7 +579,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32879582" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.2764398" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.2764398" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39790577" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -640,9 +646,11 @@
     <MESSAGE value="Finshed all basic features and removed some knowed bug" />
     <MESSAGE value="fixed some bug" />
     <MESSAGE value="add markdown feature, modify the net part and fixed some bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="add markdown feature, modify the net part and fixed some bug" />
+    <MESSAGE value="change the upload part and fixed some bug, maybe it's the final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the upload part and fixed some bug, maybe it's the final version" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -655,13 +663,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Memo/Model.java</url>
-          <line>286</line>
+          <line>293</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Memo/Model.java</url>
-          <line>301</line>
+          <line>318</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -914,7 +922,7 @@
     <entry file="file://$PROJECT_DIR$/src/Memo/view/UploadView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -934,23 +942,9 @@
     <entry file="file://$PROJECT_DIR$/src/Memo/view/MemoView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Memo/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2763#2764#0" expanded="true" />
-            <element signature="e#2804#2805#0" expanded="true" />
-            <element signature="e#2869#2870#0" expanded="true" />
-            <element signature="e#2906#2907#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -977,10 +971,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Memo/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="293" column="16" selection-start-line="293" selection-start-column="16" selection-end-line="293" selection-end-column="16" />
+        <state relative-caret-position="125">
+          <caret line="357" column="15" lean-forward="true" selection-start-line="357" selection-start-column="15" selection-end-line="357" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9099#9100#0" expanded="true" />
+            <element signature="e#9139#9140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Memo/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2869#2870#0" expanded="true" />
+            <element signature="e#2906#2907#0" expanded="true" />
           </folding>
         </state>
       </provider>

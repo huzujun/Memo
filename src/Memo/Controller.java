@@ -171,11 +171,11 @@ public class Controller {
         if (model.setNet(text)) {
             uploadView.jLabel.setText("上传成功");
             uploadView.jLabel.setForeground(new Color(29, 158, 0));
+            model.upload(id);
         } else {
             uploadView.jLabel.setText("上传失败");
             uploadView.jLabel.setForeground(Color.red);
         }
-        model.upload(id);
     }
 
 
