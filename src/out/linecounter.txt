@@ -26,3 +26,37 @@ Memo/view/MemoView.java, code is 139, comment is 7, blank is 24.
 Memo/view/RegisterView.java, code is 47, comment is 0, blank is 9.
 Memo/view/View.java, code is 5, comment is 0, blank is 2.
 ===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.2
+-------------------------------------------------------------------------------
+count time : 2018-11-26 21:37:00
+count workspace : /home/huzujun/Desktop/java/homework/submit/Memo/src
+total files : 17
+total code lines : 1455
+total comment lines : 530
+total blank lines : 235
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .java|           1455|            530|            235| 1.0e+2|
+   -------------------------------------------------------------------------
+conglin/link/LinkDefinition.java, code is 19, comment is 20, blank is 5.
+conglin/markdown/MarkdownContentEditor.java, code is 99, comment is 72, blank is 24.
+conglin/markdown/MarkdownProcessor.java, code is 302, comment is 154, blank is 42.
+conglin/replacement/Replacement.java, code is 5, comment is 8, blank is 2.
+conglin/test/TestMarkdownProcessor.java, code is 38, comment is 15, blank is 10.
+Memo/Controller.java, code is 82, comment is 80, blank is 26.
+Memo/Main.java, code is 48, comment is 3, blank is 7.
+Memo/Model.java, code is 290, comment is 88, blank is 30.
+Memo/myComponent/Content.java, code is 14, comment is 4, blank is 4.
+Memo/myComponent/Display.java, code is 77, comment is 26, blank is 9.
+Memo/myComponent/myButton.java, code is 11, comment is 3, blank is 2.
+Memo/Server.java, code is 65, comment is 17, blank is 10.
+Memo/view/LoginView.java, code is 55, comment is 3, blank is 11.
+Memo/view/MemoView.java, code is 264, comment is 34, blank is 32.
+Memo/view/RegisterView.java, code is 47, comment is 3, blank is 9.
+Memo/view/UploadView.java, code is 34, comment is 0, blank is 10.
+Memo/view/View.java, code is 5, comment is 0, blank is 2.
+===============================================================================

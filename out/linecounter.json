@@ -1,0 +1,1038 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.2",
+    "workspace": "/home/huzujun/Desktop/java/homework/submit/Memo",
+    "linecount": [
+        {
+            "version": "0.2.2",
+            "counttime": "2018-11-26 21:36:16",
+            "filesum": 156,
+            "codesum": 12349,
+            "commentsum": 2715,
+            "blanksum": 406,
+            "statistics": {
+                ".iml": {
+                    "code": 12,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".txt": {
+                    "code": 1,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".md": {
+                    "code": 171,
+                    "comment": 3,
+                    "blank": 83
+                },
+                ".html": {
+                    "code": 8902,
+                    "comment": 2151,
+                    "blank": 77
+                },
+                ".xml": {
+                    "code": 1239,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".java": {
+                    "code": 1455,
+                    "comment": 530,
+                    "blank": 235
+                },
+                ".js": {
+                    "code": 29,
+                    "comment": 0,
+                    "blank": 1
+                },
+                "": {
+                    "code": 7,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".css": {
+                    "code": 533,
+                    "comment": 31,
+                    "blank": 10
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".idea/description.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": ".idea/libraries/tablelayout.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": ".idea/misc.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": ".idea/modules.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": ".idea/project-template.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 124,
+                    "comment": 0,
+                    "filename": ".idea/uiDesigner.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".idea/vcs.xml"
+                },
+                {
+                    "blank": 0,
+                    "code": 1074,
+                    "comment": 0,
+                    "filename": ".idea/workspace.xml"
+                },
+                {
+                    "blank": 4,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "1.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 2,
+                    "filename": "doc/allclasses-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 31,
+                    "comment": 2,
+                    "filename": "doc/allclasses-noframe.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 278,
+                    "comment": 51,
+                    "filename": "doc/conglin/link/LinkDefinition.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 2,
+                    "filename": "doc/conglin/link/package-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 106,
+                    "comment": 36,
+                    "filename": "doc/conglin/link/package-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 99,
+                    "comment": 36,
+                    "filename": "doc/conglin/link/package-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 523,
+                    "comment": 66,
+                    "filename": "doc/conglin/markdown/MarkdownContentEditor.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 295,
+                    "comment": 52,
+                    "filename": "doc/conglin/markdown/MarkdownProcessor.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 2,
+                    "filename": "doc/conglin/markdown/package-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 110,
+                    "comment": 36,
+                    "filename": "doc/conglin/markdown/package-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 100,
+                    "comment": 36,
+                    "filename": "doc/conglin/markdown/package-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 2,
+                    "filename": "doc/conglin/replacement/package-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 106,
+                    "comment": 36,
+                    "filename": "doc/conglin/replacement/package-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 95,
+                    "comment": 36,
+                    "filename": "doc/conglin/replacement/package-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 186,
+                    "comment": 43,
+                    "filename": "doc/conglin/replacement/Replacement.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 2,
+                    "filename": "doc/conglin/test/package-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 106,
+                    "comment": 36,
+                    "filename": "doc/conglin/test/package-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 99,
+                    "comment": 36,
+                    "filename": "doc/conglin/test/package-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 252,
+                    "comment": 50,
+                    "filename": "doc/conglin/test/TestMarkdownProcessor.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 119,
+                    "comment": 39,
+                    "filename": "doc/constant-values.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 86,
+                    "comment": 36,
+                    "filename": "doc/deprecated-list.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 187,
+                    "comment": 36,
+                    "filename": "doc/help-doc.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 102,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-1.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 96,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-10.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 100,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-11.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 122,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-12.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 120,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-13.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 116,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-14.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 100,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-15.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 90,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-16.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 114,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-2.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 102,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-3.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 90,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-4.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 96,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-5.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 92,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-6.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 94,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-7.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 102,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-8.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 138,
+                    "comment": 37,
+                    "filename": "doc/index-files/index-9.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 73,
+                    "comment": 2,
+                    "filename": "doc/index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 463,
+                    "comment": 62,
+                    "filename": "doc/Memo/Controller.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 191,
+                    "comment": 44,
+                    "filename": "doc/Memo/Main.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 323,
+                    "comment": 62,
+                    "filename": "doc/Memo/myComponent/Content.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 389,
+                    "comment": 65,
+                    "filename": "doc/Memo/myComponent/Display.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 307,
+                    "comment": 62,
+                    "filename": "doc/Memo/myComponent/myButton.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 2,
+                    "filename": "doc/Memo/myComponent/package-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 118,
+                    "comment": 36,
+                    "filename": "doc/Memo/myComponent/package-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 128,
+                    "comment": 36,
+                    "filename": "doc/Memo/myComponent/package-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 2,
+                    "filename": "doc/Memo/package-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 108,
+                    "comment": 36,
+                    "filename": "doc/Memo/package-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 100,
+                    "comment": 36,
+                    "filename": "doc/Memo/package-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 229,
+                    "comment": 49,
+                    "filename": "doc/Memo/view/LoginView.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 351,
+                    "comment": 59,
+                    "filename": "doc/Memo/view/MemoView.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "doc/Memo/view/package-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 133,
+                    "comment": 36,
+                    "filename": "doc/Memo/view/package-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 106,
+                    "comment": 36,
+                    "filename": "doc/Memo/view/package-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 229,
+                    "comment": 49,
+                    "filename": "doc/Memo/view/RegisterView.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 260,
+                    "comment": 54,
+                    "filename": "doc/Memo/view/UploadView.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 180,
+                    "comment": 43,
+                    "filename": "doc/Memo/view/View.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 2,
+                    "filename": "doc/overview-frame.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 121,
+                    "comment": 36,
+                    "filename": "doc/overview-summary.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 149,
+                    "comment": 36,
+                    "filename": "doc/overview-tree.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "doc/package-list"
+                },
+                {
+                    "blank": 1,
+                    "code": 29,
+                    "comment": 0,
+                    "filename": "doc/script.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 125,
+                    "comment": 39,
+                    "filename": "doc/serialized-form.html"
+                },
+                {
+                    "blank": 10,
+                    "code": 533,
+                    "comment": 31,
+                    "filename": "doc/stylesheet.css"
+                },
+                {
+                    "filename": "img/close-button.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "img/menu-button.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "img/upload-button.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "img/wavy.gif",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "Memo.iml"
+                },
+                {
+                    "filename": "out/production/Memo/conglin/link/LinkDefinition.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownContentEditor$1.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownContentEditor.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor$1.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor$2.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor$3.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor$4.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor$5.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor$6.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor$7.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/markdown/MarkdownProcessor.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/replacement/Replacement.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/conglin/test/TestMarkdownProcessor.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/Controller.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/Main.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/Model$1.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/Model$RemoteReader.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/Model.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/myComponent/Content.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/myComponent/Display.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/myComponent/myButton.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/Server$ClientHandler.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/Server.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/view/LoginView.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/view/MemoView$1.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/view/MemoView.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/view/RegisterView.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/view/UploadView.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "out/production/Memo/Memo/view/View.class",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 18,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "README.md"
+                },
+                {
+                    "filename": "screenShot/1.gif",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "screenShot/2.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "screenShot/3.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "screenShot/wechat.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 19,
+                    "comment": 20,
+                    "filename": "src/conglin/link/LinkDefinition.java"
+                },
+                {
+                    "blank": 24,
+                    "code": 99,
+                    "comment": 72,
+                    "filename": "src/conglin/markdown/MarkdownContentEditor.java"
+                },
+                {
+                    "blank": 42,
+                    "code": 302,
+                    "comment": 154,
+                    "filename": "src/conglin/markdown/MarkdownProcessor.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 8,
+                    "filename": "src/conglin/replacement/Replacement.java"
+                },
+                {
+                    "blank": 10,
+                    "code": 38,
+                    "comment": 15,
+                    "filename": "src/conglin/test/TestMarkdownProcessor.java"
+                },
+                {
+                    "blank": 26,
+                    "code": 82,
+                    "comment": 80,
+                    "filename": "src/Memo/Controller.java"
+                },
+                {
+                    "blank": 7,
+                    "code": 48,
+                    "comment": 3,
+                    "filename": "src/Memo/Main.java"
+                },
+                {
+                    "blank": 30,
+                    "code": 290,
+                    "comment": 88,
+                    "filename": "src/Memo/Model.java"
+                },
+                {
+                    "blank": 4,
+                    "code": 14,
+                    "comment": 4,
+                    "filename": "src/Memo/myComponent/Content.java"
+                },
+                {
+                    "blank": 9,
+                    "code": 77,
+                    "comment": 26,
+                    "filename": "src/Memo/myComponent/Display.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 3,
+                    "filename": "src/Memo/myComponent/myButton.java"
+                },
+                {
+                    "blank": 10,
+                    "code": 65,
+                    "comment": 17,
+                    "filename": "src/Memo/Server.java"
+                },
+                {
+                    "blank": 11,
+                    "code": 55,
+                    "comment": 3,
+                    "filename": "src/Memo/view/LoginView.java"
+                },
+                {
+                    "blank": 32,
+                    "code": 264,
+                    "comment": 34,
+                    "filename": "src/Memo/view/MemoView.java"
+                },
+                {
+                    "blank": 9,
+                    "code": 47,
+                    "comment": 3,
+                    "filename": "src/Memo/view/RegisterView.java"
+                },
+                {
+                    "blank": 10,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": "src/Memo/view/UploadView.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src/Memo/view/View.java"
+                },
+                {
+                    "filename": "tablelayout.jar",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "text/local/1.md"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "text/local/1.md.html"
+                },
+                {
+                    "blank": 26,
+                    "code": 50,
+                    "comment": 1,
+                    "filename": "text/local/2.md"
+                },
+                {
+                    "blank": 22,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "text/local/2.md.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "text/local/3.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "text/local/3.md.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "text/local/4.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "text/local/4.md.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "text/remove/1.md"
+                },
+                {
+                    "blank": 4,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "text/remove/1.md.html"
+                },
+                {
+                    "blank": 4,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "text/remove/2.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "text/remove/2.md.html"
+                },
+                {
+                    "blank": 26,
+                    "code": 50,
+                    "comment": 1,
+                    "filename": "text/remove/3.md"
+                },
+                {
+                    "blank": 22,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "text/remove/3.md.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "text/remove/4.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "text/remove/4.md.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "text/remove/5.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "text/remove/5.md.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "text/remove/6.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "text/remove/6.md.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "text/remove/7.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "text/remove/7.md.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "text/remove/8.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "text/remove/8.md.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "usr.txt"
+                }
+            ]
+        }
+    ]
+}

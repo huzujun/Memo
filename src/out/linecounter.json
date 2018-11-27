@@ -85,6 +85,125 @@
                     "filename": "Memo/view/View.java"
                 }
             ]
+        },
+        {
+            "version": "0.2.2",
+            "counttime": "2018-11-26 21:37:00",
+            "filesum": 17,
+            "codesum": 1455,
+            "commentsum": 530,
+            "blanksum": 235,
+            "statistics": {
+                ".java": {
+                    "code": 1455,
+                    "comment": 530,
+                    "blank": 235
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 5,
+                    "code": 19,
+                    "comment": 20,
+                    "filename": "conglin/link/LinkDefinition.java"
+                },
+                {
+                    "blank": 24,
+                    "code": 99,
+                    "comment": 72,
+                    "filename": "conglin/markdown/MarkdownContentEditor.java"
+                },
+                {
+                    "blank": 42,
+                    "code": 302,
+                    "comment": 154,
+                    "filename": "conglin/markdown/MarkdownProcessor.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 8,
+                    "filename": "conglin/replacement/Replacement.java"
+                },
+                {
+                    "blank": 10,
+                    "code": 38,
+                    "comment": 15,
+                    "filename": "conglin/test/TestMarkdownProcessor.java"
+                },
+                {
+                    "blank": 26,
+                    "code": 82,
+                    "comment": 80,
+                    "filename": "Memo/Controller.java"
+                },
+                {
+                    "blank": 7,
+                    "code": 48,
+                    "comment": 3,
+                    "filename": "Memo/Main.java"
+                },
+                {
+                    "blank": 30,
+                    "code": 290,
+                    "comment": 88,
+                    "filename": "Memo/Model.java"
+                },
+                {
+                    "blank": 4,
+                    "code": 14,
+                    "comment": 4,
+                    "filename": "Memo/myComponent/Content.java"
+                },
+                {
+                    "blank": 9,
+                    "code": 77,
+                    "comment": 26,
+                    "filename": "Memo/myComponent/Display.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 3,
+                    "filename": "Memo/myComponent/myButton.java"
+                },
+                {
+                    "blank": 10,
+                    "code": 65,
+                    "comment": 17,
+                    "filename": "Memo/Server.java"
+                },
+                {
+                    "blank": 11,
+                    "code": 55,
+                    "comment": 3,
+                    "filename": "Memo/view/LoginView.java"
+                },
+                {
+                    "blank": 32,
+                    "code": 264,
+                    "comment": 34,
+                    "filename": "Memo/view/MemoView.java"
+                },
+                {
+                    "blank": 9,
+                    "code": 47,
+                    "comment": 3,
+                    "filename": "Memo/view/RegisterView.java"
+                },
+                {
+                    "blank": 10,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": "Memo/view/UploadView.java"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "Memo/view/View.java"
+                }
+            ]
         }
     ]
 }

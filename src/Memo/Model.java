@@ -318,7 +318,7 @@ class Model {
                 nowEdit = -i;
                 write(deleteSecondLine(text), false);
                 String lines[] = text.split("\n");
-                removeList.addLast(memoView.addRemoveJscoll(lines[1], null, i));
+                removeList.addLast(memoView.addRemoveJscoll(lines[0], null, i));
                 break;
             }
         }
